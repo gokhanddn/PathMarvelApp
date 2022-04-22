@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="LoadingReusableView" id="3fE-FS-v0q" customClass="LoadingReusableView" customModule="MarvelApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="q3e-gc-tax">
+                    <rect key="frame" x="150" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="g60-dJ-Xkx"/>
+                        <constraint firstAttribute="width" constant="20" id="nAo-gV-DPF"/>
+                    </constraints>
+                </activityIndicatorView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eo-6S-Hnr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <color key="backgroundColor" systemColor="systemGray6Color"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="18"/>
+                    <state key="normal" title="load more">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="6Ds-xe-xXR"/>
+            <color key="backgroundColor" systemColor="systemGray6Color"/>
+            <constraints>
+                <constraint firstItem="q3e-gc-tax" firstAttribute="centerX" secondItem="3fE-FS-v0q" secondAttribute="centerX" id="Q37-Bv-yca"/>
+                <constraint firstItem="q3e-gc-tax" firstAttribute="centerY" secondItem="3fE-FS-v0q" secondAttribute="centerY" id="SxA-d0-MOE"/>
+                <constraint firstItem="6Ds-xe-xXR" firstAttribute="trailing" secondItem="6Eo-6S-Hnr" secondAttribute="trailing" id="jZx-m6-lDK"/>
+                <constraint firstItem="6Eo-6S-Hnr" firstAttribute="leading" secondItem="6Ds-xe-xXR" secondAttribute="leading" id="jnG-u7-obg"/>
+                <constraint firstItem="6Eo-6S-Hnr" firstAttribute="top" secondItem="3fE-FS-v0q" secondAttribute="top" id="lq3-7w-JGv"/>
+                <constraint firstItem="6Eo-6S-Hnr" firstAttribute="bottom" secondItem="6Ds-xe-xXR" secondAttribute="bottom" id="x59-hG-kX8"/>
+            </constraints>
+            <connections>
+                <outlet property="activityIndicator" destination="q3e-gc-tax" id="HQ6-Ug-3ku"/>
+                <outlet property="btnLoadMore" destination="6Eo-6S-Hnr" id="H2s-Zm-8e7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="153.34821428571428"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

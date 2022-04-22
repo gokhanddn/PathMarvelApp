@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:MarvelApp/MarvelApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MarvelAppService/MarvelAppService.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:MarvelAppModel/MarvelAppModel.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Networking/Networking.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Core/Core.xcodeproj">
+   </FileRef>
+</Workspace>
